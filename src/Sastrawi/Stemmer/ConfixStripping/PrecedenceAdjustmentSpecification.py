@@ -11,10 +11,19 @@ class PrecedenceAdjustmentSpecification(object):
         regex_rules = [
             r'^be(.*)lah$',
             r'^be(.*)an$',
-            r'^me(.*)i$',
-            r'^di(.*)i$',
-            r'^pe(.*)i$',
-            r'^ter(.*)i$',
+            r'.*i$',
+            r'.*is$'
+            #r'^me(.*)i$',
+            #r'^di(.*)i$',
+            #r'^pe(.*)i$',
+            #r'^ter(.*)i$',
+            #additional pras
+            #r'^be(.*)i$',
+            #r'^be(.*)is$',
+            #r'^me(.*)is$',
+            #r'^di(.*)is$',
+            #r'^pe(.*)is$',
+            #r'^ter(.*)is$'
         ]
 
         for rule in regex_rules:
@@ -22,6 +31,3 @@ class PrecedenceAdjustmentSpecification(object):
                 return True
 
         return False
-
-
-
